@@ -8,5 +8,4 @@ Here is a link to the webpage:
 
 Here is a screenshot of the first page: 
 
-/3-friendly-parakeet/Develop/firstPage.png
-
+<img width="1440" alt="Screen Shot 2022-05-14 at 5 53 30 PM" src="https://user-images.githubusercontent.com/100814403/168450033-41f4d86a-e5b3-4151-a3ee-5a263be9f622.png">
