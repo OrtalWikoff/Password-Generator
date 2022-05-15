@@ -3,8 +3,7 @@ I created application that an employee can use to generate a random password bas
 
 Here is a link to the webpage:
 
-3-friendly-parakeet/Develop/firstPage.png
-
+https://ortalwikoff.github.io/Password-Generator/
 
 Here is a screenshot of the first page: 
 
