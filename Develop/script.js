@@ -1,9 +1,11 @@
+
 // Assignment code here
 var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 var specialChara = ["!", "%", "&", ",", "*", "+", "-", ".", "/", "<", ">", "?","~"];
 
+//global var 
 var pwLength; 
 var pushLower;
 var pushUpper;
@@ -12,10 +14,11 @@ var pushSpecialChara;
 var pwChoice = []; 
 var selection = [];
 
- 
 var generateBtn = document.querySelector("#generate");
-// Get references to the #generate element
 
+ 
+
+// Get references to the #generate element
 generateBtn.addEventListener("click", writePassword);
 
 function writePassword() {
@@ -26,9 +29,9 @@ function writePassword() {
 }
 
 function generatePw(){
-    pwLength = prompt("Choose characters between 8-128")
+    pwLength = prompt("Choose characters between 8-128.")
     if(pwLength < 8 || pwLength > 128){
-    pwLength = prompt ("Required corect value!")
+    pwLength = prompt ("Required corect value (between 8-128).")
     return null} 
     pushLower = confirm("Do you want your PW to contain lower case letters?");
     pushUpper = confirm("Do you want your PW to contain upper case letters?");
@@ -39,7 +42,7 @@ function generatePw(){
   if (pushNumber && pushSpecialChara && pushUpper && pushLower) {
   selection = specialChara.concat(number, lowerCase, upperCase);
 }
-// three selected
+// three option selected
   else if (pushNumber && pushSpecialChara && pushUpper) {
   selection = specialChara.concat(number, upperCase);
 } else if (pushSpecialChara && pushUpper && pushLower) {
@@ -49,7 +52,7 @@ function generatePw(){
 } else if (pushLower && pushNumber && pushSpecialChara) {
   selection = letters.concat(number, specialChara);
 }
-//two selected
+//two option selected
   else if (pushSpecialChara && pushNumber) {
   selection = specialChara.concat(number);
 } else if (pushLower && pushUpper) {
@@ -63,7 +66,7 @@ function generatePw(){
 } else if (pushSpecialChara && pushUpper) {
   selection = specialChara.concat(upperCase);
 }
-//one option
+//one option selected
   else if (pushSpecialChara) {
   selection = specialChara;
 } else if (pushNumber) {
