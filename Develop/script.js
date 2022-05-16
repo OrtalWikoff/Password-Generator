@@ -29,7 +29,7 @@ function writePassword() {
 }
 
 function generatePw(){
-    pwLength = prompt("Choose characters between 8-128.")
+    pwLength = prompt("Please choose characters between 8-128.")
     if(pwLength < 8 || pwLength > 128){
     pwLength = prompt ("Required corect value (between 8-128).")
     return null} 
